@@ -14,7 +14,7 @@ const query = groq`
 
 `;
 
-// const getLastIndex = () => Math.floor(Math.random() * 3);
+export const revalidate = 10;
 
 const Page = async () => {
   const posts = await client.fetch(query);
