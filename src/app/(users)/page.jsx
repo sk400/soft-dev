@@ -20,7 +20,6 @@ const Page = async () => {
   const posts = await client.fetch(query);
 
   const featuredPosts = posts?.slice(0, 3);
-  console.log(featuredPosts);
 
   return (
     <>
